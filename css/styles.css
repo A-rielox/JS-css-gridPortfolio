@@ -166,7 +166,14 @@ p {
       width: 95vw;
    }
 }
-/* added during recording */
+.underline {
+   width: 5rem;
+   height: 0.25rem;
+   margin-bottom: 1.25rem;
+   background: var(--clr-primary-5);
+   margin-left: auto;
+   margin-right: auto;
+}
 
 /*
 =============== 
@@ -233,6 +240,17 @@ Navbar
       grid-template-columns: auto 1fr;
       align-items: center;
    }
+}
+
+/* fixed navbar */
+.navbar-fixed {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: var(--clr-white);
+   z-index: 2;
+   box-shadow: var(--dark-shadow);
 }
 
 /*
@@ -315,7 +333,33 @@ Sidebar
 Hero
 ===============
 */
-/* underline added to globals */
+.hero .underline {
+   margin-bottom: 0.5rem;
+   margin-left: 0;
+}
+.hero-img {
+   display: none;
+}
+.hero {
+   background: var(--clr-primary-10);
+}
+
+.hero-center {
+   min-height: calc(100vh - 5rem);
+   display: grid;
+   place-items: center;
+}
+.hero-info h4 {
+   color: var(--clr-grey-5);
+}
+
+.hero-icons {
+   justify-items: start;
+}
+
+.hero-btn {
+   margin-top: 1.25rem;
+}
 
 /*
 =============== 
